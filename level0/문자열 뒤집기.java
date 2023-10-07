@@ -15,6 +15,8 @@
 
 // my_string이 "bread"이므로 거꾸로 뒤집은 "daerb"를 return합니다.
 
+import java.util.*;
+
 class Solution {
     public String solution(String my_string) {
         String answer = "";
@@ -26,5 +28,24 @@ class Solution {
             answer += my_string.substring(i,i+1);
         }
         return answer;
+    }
+}
+
+// StringBuilder 사용
+
+class Solution {
+    public String solution(String my_string) {
+
+        // StringBuilder로 객체 생성
+        StringBuilder reverseString = new StringBuilder();
+
+        // my_String을 추가
+        reverseString.append(my_string);
+
+        // 뒤집기
+        reverseString.reverse;
+
+        // toString으로 문자열반환
+        return reverseString.toString();
     }
 }
