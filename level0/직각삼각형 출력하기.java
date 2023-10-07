@@ -34,3 +34,16 @@ public class Solution {
 
     }
 }
+
+
+// for 2번 안쓰고 repeat를 사용해서 반복하는 방법
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i=1; i<=n; i++){
+            System.out.println("*".repeat(i));
+        }
+    }
+}
