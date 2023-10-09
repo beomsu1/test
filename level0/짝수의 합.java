@@ -38,6 +38,7 @@ class Solution {
         // 0부터 n까지의 정수 포함하는 스트림 생성
         return IntStream.rangeClosed(0, n)
 
+            // filter, map, reduce, forEach 등 사용할 때 람다식 사용
             // 람다식 사용해서 짝수분별
             .filter(e -> e % 2 == 0)
 
