@@ -43,6 +43,7 @@ class Solution {
     public String solution(String my_string) {
         String answer = "";
 
+        // [] 정규표현식 -> ''을 사용 안 해도 문자 집합 지정 가능
         answer = my_string.replaceAll("[aeiou]", "");
 
         return answer;
