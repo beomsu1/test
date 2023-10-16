@@ -39,3 +39,19 @@ class Solution {
         return answer;
     }
 }
+
+// LowerCase , toUpper, toLower 사용 (대소문자 변경)
+class Solution {
+    public String solution(String my_string) {
+        char[] chars = my_string.toCharArray();
+        String answer = "";
+        for (char aChar : chars) {
+            if (Character.isLowerCase(aChar)) {
+                answer += Character.toUpperCase(aChar);
+            } else {
+                answer += Character.toLowerCase(aChar);
+            }
+        }
+        return answer;
+    }
+}
