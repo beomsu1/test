@@ -42,3 +42,14 @@ class Solution {
         return answer;
     }
 }
+
+
+class Solution {
+    public String solution(String my_string) {
+
+        // 문자열에도 toLowerCase() 사용 가능 그 후 charArray로 char 배열로 변경
+        char[] c = my_string.toLowerCase().toCharArray();
+        Arrays.sort(c);
+        return new String(c);
+    }
+}
