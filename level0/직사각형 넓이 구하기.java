@@ -36,7 +36,7 @@ class Solution {
 
         for(int i = 0; i<dots.length; i++){
 
-            // max(), min() -> max(변수, 변경할 값)
+            // max(), min() -> max(a,b) - a,b 비교해서 더 큰 값 반환
             max1 = Math.max(max1, dots[i][0]);
             min1 = Math.min(min1, dots[i][0]);
             
