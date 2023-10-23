@@ -19,3 +19,32 @@ dots	result
 입출력 예 #2
 
 좌표 [[-1, -1], [1, 1], [1, -1], [-1, 1]]를 꼭짓점으로 갖는 직사각형의 가로, 세로 길이는 각각 2, 2이므로 직사각형의 넓이는 2 x 2 = 4입니다. */
+
+import java.util.*;
+
+class Solution {
+    public int solution(int[][] dots) {
+        int answer = 0;
+
+        // 가로
+        int max1 = dots[0][0];
+        int min1 = dots[0][0];
+
+        // 세로
+        int max2 = dots[0][1];
+        int min2 = dots[0][1];
+
+        for(int i = 0; i<dots.length; i++){
+
+            // max(), min() -> max(변수, 변경할 값)
+            max1 = Math.max(max1, dots[i][0]);
+            min1 = Math.min(min1, dots[i][0]);
+            
+            max2 = Math.max(max2, dots[i][1]);
+            min2 = Math.min(min2, dots[i][1]);
+        }
+
+        answer = (max1 - min1) * (max2 - min2);
+        return answer;
+    }
+}
